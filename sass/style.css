@@ -2,26 +2,258 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   max-width: 768px;
   margin: auto;
 }
 
-.blocpage {
-  margin: 20px;
-  padding: 20px;
+html,
+body {
+  overflow-x: hidden;
 }
+
+/*.loader {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-bottom-color: #9356dc;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }*/
 
 /*------------------------header----------------------------------------------------*/
 header {
   width: 100%;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
   height: 65px;
   justify-content: center;
 }
-.logo {
-  width: 170px;
-  height: 30px;
+
+.logo img {
+  width: 30%;
+}
+
+.location {
+  height: 50px;
+  background-color: rgb(201, 198, 198);
+  justify-content: center;
+  padding: 20px 0 0 80px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin-left: 10px;
+  border: none;
+  background-color: rgb(201, 198, 198);
+  font-weight: bold;
+  color: black;
+}
+
+.search {
+  border: none;
+}
+
+/*----------------------explore----------------------------------------------*/
+
+.explore {
+  height: 285px;
+  background-color: rgb(228, 225, 225);
+}
+
+#title {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+#title2 {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+#subtitle {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#subtitle2 {
+  display: flex;
+  justify-content: center;
+}
+
+.button1 {
+  margin-top: 35px;
+  width: 215px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  background-color: #ff79da;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 5px 5px 5px grey;
+}
+
+.button_explore {
+  display: flex;
+  justify-content: center;
+}
+
+/*-------------------------------Fonctionnement-----------------------------------------------*/
+
+.function {
+  height: 440px;
+}
+
+.function_title {
+  margin: 50px 0 0 20px;
+}
+
+.button2 {
+  margin-top: 35px;
+  width: 330px;
+  height: 75px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  border-color: gainsboro;
+  box-shadow: 4px 4px 4px grey;
+}
+
+.button_function {
+  display: flex;
+  flex-direction: column;
+}
+
+.button2 {
+  width: 90%;
+  margin-left: 25px;
+}
+
+.number {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+  display: grid;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  align-items: center;
+}
+
+/*.text_function {
+  align-items: center;
+}*/
+
+/*--------------------------------restaurants--------------------------------------------------*/
+
+.restaurants {
+  height: 1350px;
+  background-color: rgb(228, 225, 225);
+}
+
+#restaurants_title {
+  padding: 60px 0 0 20px;
+}
+
+/*----------------carte_restaurant--------------------------------*/
+figure {
+  width: 90%;
+  margin: 20px 0 0 20px;
+  box-shadow: 2px 2px 2px 2px grey;
+  border-top: none;
+}
+
+figure img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border: none;
+}
+
+figcaption {
+  background-color: white;
+  text-decoration-style: none;
+  width: 100%;
+  height: 75px;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10px;
+}
+
+.name {
+  font-weight: bold;
+  padding: 15px 0 0 10px;
+  border: none;
+}
+
+.place {
+  padding: 5px 0 0 10px;
+}
+
+.new {
+  background-color: #99e2d0;
+  padding: 8px 13px;
+  color: #088c6c;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  bottom: 160px;
+  left: 70%;
+  width: 90px;
+}
+
+/*----------------------------footer------------------------------------*/
+
+footer {
+  background-color: rgb(201, 198, 198);
+  height: 195px;
+}
+
+footer img {
+  width: 100px;
+  padding: 20px 0 0 15px;
+}
+
+footer {
+  list-style: none;
+  color: white;
+}
+
+.footer_links {
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
 }

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 768px;
+  margin: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/*------------------------header----------------------------------------------*/
+
+header {
+  height: 60px;
+  display: flex;
+}
