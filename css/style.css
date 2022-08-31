@@ -12,31 +12,7 @@ body {
   margin: auto;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
-/*.loader {
-  display: block;
-  position: relative;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 7px solid transparent;
-  border-bottom-color: #9356dc;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(45deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }*/
-
-/*------------------------header----------------------------------------------------*/
+/*------------------------------------------header----------------------------------------------------*/
 header {
   width: 100%;
   height: 115px;
@@ -51,7 +27,7 @@ header {
 }
 
 .logo img {
-  width: 30%;
+  width: 40%;
 }
 
 .location {
@@ -68,7 +44,6 @@ form {
 
 input {
   margin-left: 10px;
-  border: none;
   background-color: rgb(201, 198, 198);
   font-weight: bold;
   color: black;
@@ -78,13 +53,13 @@ input {
   border: none;
 }
 
-/*----------------------explore----------------------------------------------*/
+/*-----------------------------------------------explore----------------------------------------------*/
 
 .explore {
   height: 285px;
-  background-color: rgb(228, 225, 225);
+  background-color: rgb(247, 242, 242);
 }
-
+/*---------------------------------------titre--------*/
 #title {
   font-size: 18px;
   display: flex;
@@ -98,6 +73,7 @@ input {
   justify-content: center;
 }
 
+/*--------------------sous_titre------------------------*/
 #subtitle {
   margin-top: 20px;
   display: flex;
@@ -109,6 +85,7 @@ input {
   justify-content: center;
 }
 
+/*-----------------------bouton_explore-------------------*/
 .button1 {
   margin-top: 35px;
   width: 215px;
@@ -119,12 +96,18 @@ input {
   color: white;
   background-color: #ff79da;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 2px 2px 2px grey;
 }
 
 .button_explore {
   display: flex;
   justify-content: center;
+}
+
+.button1:hover {
+  background-color: #fab1e5;
+  background: linear-gradient(to top left, #ff79da, #9356dc);
+  box-shadow: 5px 5px 5px grey;
 }
 
 /*-------------------------------Fonctionnement-----------------------------------------------*/
@@ -138,25 +121,22 @@ input {
 }
 
 .button2 {
-  margin-top: 35px;
-  width: 330px;
+  margin: 35px 0 0 25px;
+  width: 90%;
   height: 75px;
+  border: none;
   border-radius: 25px;
   font-size: 16px;
   font-weight: bold;
-  background-color: white;
-  border-color: gainsboro;
-  box-shadow: 4px 4px 4px grey;
+  background-color: rgb(247, 242, 242);
+  box-shadow: 1px 2px 2px grey;
+  display: flex;
+  align-items: center;
 }
 
 .button_function {
   display: flex;
   flex-direction: column;
-}
-
-.button2 {
-  width: 90%;
-  margin-left: 25px;
 }
 
 .number {
@@ -165,22 +145,25 @@ input {
   border-radius: 50%;
   background-color: #9356dc;
   color: white;
-  display: grid;
+  margin-right: 25px;
   position: relative;
-  top: 10px;
   right: 10px;
-  align-items: center;
+  padding-top: 3px;
 }
 
-/*.text_function {
-  align-items: center;
-}*/
+.button2 i {
+  margin-right: 35px;
+}
 
+.button2:hover {
+  background-color: #f0dfeb;
+  box-shadow: 5px 4px 4px grey;
+}
 /*--------------------------------restaurants--------------------------------------------------*/
 
 .restaurants {
-  height: 1350px;
-  background-color: rgb(228, 225, 225);
+  height: 1250px;
+  background-color: rgb(247, 242, 242);
 }
 
 #restaurants_title {
@@ -191,26 +174,28 @@ input {
 figure {
   width: 90%;
   margin: 20px 0 0 20px;
-  box-shadow: 2px 2px 2px 2px grey;
-  border-top: none;
+  box-shadow: 1px 2px 2px 2px grey;
+  border-radius: 15px;
+  border: none;
+  position: relative;
 }
 
 figure img {
   width: 100%;
   height: 175px;
   object-fit: cover;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-  border: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 figcaption {
   background-color: white;
-  text-decoration-style: none;
   width: 100%;
   height: 75px;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: black;
+  position: relative;
 }
 
 .name {
@@ -223,37 +208,74 @@ figcaption {
   padding: 5px 0 0 10px;
 }
 
-.new {
+.fa-heart {
+  font-size: 30px;
+  font-weight: normal;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+figure .new {
+  width: 90px;
+  height: 30px;
   background-color: #99e2d0;
   padding: 8px 13px;
-  color: #088c6c;
+  color: green;
   font-weight: bold;
   border-radius: 5px;
-  position: relative;
-  bottom: 160px;
-  left: 70%;
-  width: 90px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 
 /*----------------------------footer------------------------------------*/
 
 footer {
-  background-color: rgb(201, 198, 198);
-  height: 195px;
+  background-color: rgb(56, 55, 55);
+  height: 230px;
 }
 
 footer img {
-  width: 100px;
+  width: 30%;
   padding: 20px 0 0 15px;
 }
 
-footer {
-  list-style: none;
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
   color: white;
 }
 
-.footer_links {
-  margin-top: 15px;
-  text-decoration: none;
-  color: black;
+footer i {
+  color: white;
+}
+
+.propose {
+  margin: 20px 0 0 20px;
+}
+
+.fa-cutlery {
+  margin-right: 15px;
+}
+
+.partner {
+  margin: 10px 0 0 20px;
+}
+
+.fa-handshake {
+  transform: rotate(135deg);
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.legal {
+  margin: 10px 0 0 20px;
+}
+
+.mail {
+  margin: 10px 0 0 20px;
 }

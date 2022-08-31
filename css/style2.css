@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 768px;
+  margin: auto;
+}
+
+/*------------------------header----------------------------------------------*/
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.left_arrow {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.left_arrow a {
+  color: black;
+}
+
+.logo {
+  width: 40%;
+  margin-right: 130px;
+}
+
+/*---------------------------restaurant---------------------------------------------*/
+
+.block_restaurant {
+  height: 1450px;
+}
+
+.block_restaurant img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: rgb(247, 242, 242);
+  width: 100%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  position: relative;
+  bottom: 70px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 30px 0 20px 20px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
+}
+
+.fa-heart {
+  font-size: 26px;
+  margin: 35px 30px 0 0;
+}
+
+.sub_menu {
+  margin: 30px 0 0 20px;
+  border-bottom-width: 50px;
+  border-bottom-color: #99e2d0;
+}
+
+.sub_menu::after {
+  content: "";
+  display: block;
+  width: 45px;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 3px;
+}
+
+.plates {
+  width: 90%;
+  height: 70px;
+  margin: 20px 0 0 20px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.price {
+  position: absolute;
+  right: 25px;
+  top: 35px;
+}
+
+/*------------------------------bouton_validation---------------------------------------------------*/
+.button1 {
+  width: 215px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  background-color: #ff79da;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 5px 5px 5px grey;
+}
+
+.button_explore {
+  display: flex;
+  justify-content: center;
+}
+
+.button1:hover {
+  background-color: #fab1e5;
+  background: linear-gradient(to top left, #ff79da, #9356dc);
+  box-shadow: 5px 5px 5px grey;
+}
+
+/*----------------------------footer------------------------------------*/
+
+footer {
+  background-color: rgb(56, 55, 55);
+  height: 230px;
+}
+
+footer img {
+  width: 30%;
+  padding: 20px 0 0 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  color: white;
+}
+
+footer i {
+  color: white;
+}
+
+.propose {
+  margin: 20px 0 0 20px;
+}
+
+.fa-cutlery {
+  margin-right: 15px;
+}
+
+.partner {
+  margin: 10px 0 0 20px;
+}
+
+.fa-handshake {
+  transform: rotate(135deg);
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.legal {
+  margin: 10px 0 0 20px;
+}
+
+.mail {
+  margin: 10px 0 0 20px;
+}
