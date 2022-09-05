@@ -12,7 +12,65 @@ body {
   margin: auto;
 }
 
-/*------------------------------------------header----------------------------------------------------*/
+/*------------------------------------------loader----------------------------------------------------*/
+
+/*.loader {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #fff #fff transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 3s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #ff79da #ff79da;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #9356dc#ff79da transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}*/
+
+/*----------------------------------header---------------------------------*/
 header {
   width: 100%;
   height: 115px;
@@ -32,9 +90,11 @@ header {
 
 .location {
   height: 50px;
-  background-color: rgb(201, 198, 198);
+  background-color: rgb(234, 229, 229);
   justify-content: center;
   padding: 20px 0 0 80px;
+  border-top: solid 3px rgb(175, 173, 173);
+  box-shadow: rgb(234, 231, 231);
 }
 
 form {
@@ -44,7 +104,7 @@ form {
 
 input {
   margin-left: 10px;
-  background-color: rgb(201, 198, 198);
+  background-color: rgb(234, 229, 229);
   font-weight: bold;
   color: black;
 }
@@ -59,6 +119,7 @@ input {
   height: 285px;
   background-color: rgb(247, 242, 242);
 }
+
 /*---------------------------------------titre--------*/
 #title {
   font-size: 18px;
@@ -106,22 +167,22 @@ input {
 
 .button1:hover {
   background-color: #fab1e5;
-  background: linear-gradient(to top left, #ff79da, #9356dc);
+  background: linear-gradient(to top left, #8627fa, #fa4cc6);
   box-shadow: 5px 5px 5px grey;
 }
 
 /*-------------------------------Fonctionnement-----------------------------------------------*/
 
 .function {
-  height: 440px;
+  height: 400px;
 }
 
 .function_title {
-  margin: 50px 0 0 20px;
+  margin: 50px 0 30px 20px;
 }
 
 .button2 {
-  margin: 35px 0 0 25px;
+  margin: 15px 0 0 25px;
   width: 90%;
   height: 75px;
   border: none;
@@ -159,6 +220,10 @@ input {
   background-color: #f0dfeb;
   box-shadow: 5px 4px 4px grey;
 }
+
+i:hover {
+  color: #9356dc;
+}
 /*--------------------------------restaurants--------------------------------------------------*/
 
 .restaurants {
@@ -174,7 +239,7 @@ input {
 figure {
   width: 90%;
   margin: 20px 0 0 20px;
-  box-shadow: 1px 2px 2px 2px grey;
+  box-shadow: 1px 2px 2px 2px rgb(206, 206, 206);
   border-radius: 15px;
   border: none;
   position: relative;
@@ -208,13 +273,71 @@ figcaption {
   padding: 5px 0 0 10px;
 }
 
-.fa-heart {
-  font-size: 30px;
-  font-weight: normal;
-  position: absolute;
-  right: 20px;
-  top: 15px;
+/*------------icon-----heart---------*/
+
+.icon_heart:hover i.fa-heart {
+  display: none;
 }
+
+.icon_heart:hover i.fas.fa-heart {
+  display: block;
+}
+
+.icon_heart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  margin: 1.2rem 0 2rem 7rem;
+}
+
+/*---------- icon heart palette------------------*/
+
+.icon_heart_start:hover i.fa-heart {
+  display: none;
+}
+.icon_heart_start:hover i.fas.fa-heart {
+  display: block;
+}
+
+.icon_heart_start {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  margin-top: -2rem;
+}
+
+/*-- icon_heart 3 --*/
+
+.icon_heart_3:hover i.fa-heart {
+  display: none;
+}
+
+.icon_heart_3:hover i.fas.fa-heart {
+  display: block;
+}
+
+.icon_heart_3 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  margin: 1.2rem 0 2rem 9rem;
+}
+
+i.fa-heart:hover {
+  cursor: pointer;
+  border: 0 solid transparent;
+}
+
+i.fas.fa-heart {
+  display: none;
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+/*-------------nouveau--------------------*/
 
 figure .new {
   width: 90px;
@@ -236,14 +359,11 @@ footer {
   height: 230px;
 }
 
-footer img {
-  width: 30%;
+.footer_title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
   padding: 20px 0 0 15px;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
+  color: white;
 }
 
 footer a {
@@ -254,16 +374,8 @@ footer i {
   color: white;
 }
 
-.propose {
-  margin: 20px 0 0 20px;
-}
-
 .fa-cutlery {
   margin-right: 15px;
-}
-
-.partner {
-  margin: 10px 0 0 20px;
 }
 
 .fa-handshake {
@@ -272,10 +384,10 @@ footer i {
   margin-right: 10px;
 }
 
-.legal {
-  margin: 10px 0 0 20px;
+.footer_link {
+  margin: 20px 0 0 20px;
 }
 
-.mail {
-  margin: 10px 0 0 20px;
+.footer_link :hover {
+  color: #9356dc;
 }

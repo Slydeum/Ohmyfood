@@ -38,10 +38,6 @@ header {
 
 /*---------------------------restaurant---------------------------------------------*/
 
-.block_restaurant {
-  height: 1450px;
-}
-
 .block_restaurant img {
   width: 100%;
   height: 250px;
@@ -55,6 +51,7 @@ header {
   border-top-right-radius: 35px;
   position: relative;
   bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .title {
@@ -65,7 +62,7 @@ header {
 h1 {
   margin: 30px 0 20px 20px;
   font-family: "Shrikhand", sans-serif;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .fa-heart {
@@ -94,22 +91,33 @@ h1 {
   background-color: white;
   border-radius: 20px;
   position: relative;
+  padding: 10px 0 0 20px;
+}
+
+.base {
+  font-weight: bold;
 }
 
 .details {
-  margin-top: 10px;
+  font-size: 14px;
+  margin-top: 7px;
+  /*text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;*/
 }
 
 .price {
   position: absolute;
   right: 25px;
   top: 35px;
+  font-weight: bold;
 }
 
 /*------------------------------bouton_validation---------------------------------------------------*/
 .button1 {
   width: 215px;
   height: 50px;
+  margin-top: 60px;
   border-radius: 25px;
   border: none;
   font-size: 16px;
@@ -126,7 +134,7 @@ h1 {
 
 .button1:hover {
   background-color: #fab1e5;
-  background: linear-gradient(to top left, #ff79da, #9356dc);
+  background: linear-gradient(to top left, #8627fa, #fa4cc6);
   box-shadow: 5px 5px 5px grey;
 }
 
@@ -135,11 +143,15 @@ h1 {
 footer {
   background-color: rgb(56, 55, 55);
   height: 230px;
+  position: relative;
+  bottom: 70px;
 }
 
-footer img {
-  width: 30%;
+.footer_title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
   padding: 20px 0 0 15px;
+  color: white;
 }
 
 .footer {
@@ -155,28 +167,20 @@ footer i {
   color: white;
 }
 
-.propose {
+.footer_link {
   margin: 20px 0 0 20px;
+}
+
+.footer_link :hover {
+  color: #9356dc;
 }
 
 .fa-cutlery {
   margin-right: 15px;
 }
 
-.partner {
-  margin: 10px 0 0 20px;
-}
-
 .fa-handshake {
   transform: rotate(135deg);
   font-size: 14px;
   margin-right: 10px;
-}
-
-.legal {
-  margin: 10px 0 0 20px;
-}
-
-.mail {
-  margin: 10px 0 0 20px;
 }
