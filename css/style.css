@@ -12,62 +12,46 @@ body {
   margin: auto;
 }
 
+.block-page {
+  padding: 0 5px 0 5px;
+}
 /*------------------------------------------loader----------------------------------------------------*/
 
-/*.loader {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  border: 3px solid;
-  border-color: #fff #fff transparent transparent;
-  box-sizing: border-box;
-  animation: rotation 3s linear infinite;
+/*body {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  z-index: 998;
+  height: 100%;
+  width: 100%;
 }
 
-.loader::after,
-.loader::before {
-  content: "";
-  box-sizing: border-box;
+.loader {
   position: absolute;
-  right: 50%;
   top: 50%;
-  bottom: 0;
-  margin: auto;
-  border: 3px solid;
-  border-color: transparent transparent #ff79da #ff79da;
-  width: 40px;
-  height: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: #ffffff;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.loader::after {
+  content: "";
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border: 16px solid #f6f6f6;
+  border-top: 12px solid #9356dc;
+  border-right: 12px solid #ff79da;
+  border-bottom: 12px solid #99e2d0;
   border-radius: 50%;
-  box-sizing: border-box;
-  animation: rotationBack 0.5s linear infinite;
-  transform-origin: center center;
-}
-
-.loader::before {
-  width: 32px;
-  height: 32px;
-  border-color: #9356dc#ff79da transparent transparent;
-  animation: rotation 1.5s linear infinite;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotationBack {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
+  opacity: 0;
+  animation: loader 3s linear;
+  -webkit-animation: loader 3s linear;
 }*/
 
 /*----------------------------------header---------------------------------*/
@@ -94,7 +78,6 @@ header {
   justify-content: center;
   padding: 20px 0 0 80px;
   border-top: solid 3px rgb(175, 173, 173);
-  box-shadow: rgb(234, 231, 231);
 }
 
 form {
@@ -107,6 +90,7 @@ input {
   background-color: rgb(234, 229, 229);
   font-weight: bold;
   color: black;
+  text-decoration-style: none;
 }
 
 .search {
@@ -121,27 +105,24 @@ input {
 }
 
 /*---------------------------------------titre--------*/
-#title {
+h2 {
   font-size: 18px;
   display: flex;
   justify-content: center;
+}
+
+#title {
   padding-top: 40px;
 }
 
-#title2 {
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-}
-
 /*--------------------sous_titre------------------------*/
-#subtitle {
+.subtitle {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
-#subtitle2 {
+.subtitle2 {
   display: flex;
   justify-content: center;
 }
@@ -179,6 +160,8 @@ input {
 
 .function_title {
   margin: 50px 0 30px 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .button2 {
@@ -193,6 +176,7 @@ input {
   box-shadow: 1px 2px 2px grey;
   display: flex;
   align-items: center;
+  opacity: 0, 8;
 }
 
 .button_function {
@@ -216,13 +200,13 @@ input {
   margin-right: 35px;
 }
 
-.button2:hover {
+.button i:hover {
   background-color: #f0dfeb;
   box-shadow: 5px 4px 4px grey;
 }
 
-i:hover {
-  color: #9356dc;
+.button_function i {
+  color: grey;
 }
 /*--------------------------------restaurants--------------------------------------------------*/
 
@@ -233,12 +217,14 @@ i:hover {
 
 #restaurants_title {
   padding: 60px 0 0 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /*----------------carte_restaurant--------------------------------*/
 figure {
   width: 90%;
-  margin: 20px 0 0 20px;
+  margin: 20px 0 0 15px;
   box-shadow: 1px 2px 2px 2px rgb(206, 206, 206);
   border-radius: 15px;
   border: none;
@@ -253,7 +239,7 @@ figure img {
   border-top-right-radius: 15px;
 }
 
-figcaption {
+.legend {
   background-color: white;
   width: 100%;
   height: 75px;
@@ -265,15 +251,22 @@ figcaption {
 
 .name {
   font-weight: bold;
-  padding: 15px 0 0 10px;
+  padding: 15px 0 0 5px;
   border: none;
 }
 
 .place {
-  padding: 5px 0 0 10px;
+  padding: 5px 0 0 5px;
+  font-weight: normal;
 }
 
 /*------------icon-----heart---------*/
+
+.icon_heart {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
 
 .icon_heart:hover i.fa-heart {
   display: none;
@@ -337,7 +330,7 @@ i.fas.fa-heart {
   font-size: 2rem;
 }
 
-/*-------------nouveau--------------------*/
+/*---------mot----nouveau------incrusté--------------*/
 
 figure .new {
   width: 90px;
@@ -356,7 +349,7 @@ figure .new {
 
 footer {
   background-color: rgb(56, 55, 55);
-  height: 230px;
+  height: 260px;
 }
 
 .footer_title {

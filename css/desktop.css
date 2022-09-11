@@ -1,0 +1,27 @@
+@media screen and (min-width: 993px) and (max-width: 1440px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+  }
+  /*------------------------header-----------------------------------------*/
+
+  header {
+    width: 100%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .location {
+    width: 100%;
+  }
+}

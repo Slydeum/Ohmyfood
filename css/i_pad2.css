@@ -1,0 +1,75 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+
+  .blocpage {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*-------------------header-------------------------------------------*/
+
+  .logo {
+    width: 55%;
+    margin-right: 50px;
+  }
+
+  /*--------------------------block_restaurant---------------------------------------*/
+
+  .block_restaurant {
+    height: 300px;
+  }
+
+  .block_restaurant img {
+    height: 300px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .plates {
+    width: 45%;
+  }
+
+  .starter {
+    width: 45%;
+  }
+
+  .dessert {
+    width: 45%;
+  }
+
+  .choice {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .base {
+    font-size: 12px;
+  }
+
+  .details {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  footer {
+    height: 260px;
+    padding-top: unset;
+  }
+}
