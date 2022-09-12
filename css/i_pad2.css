@@ -13,21 +13,29 @@
   }
 
   .blocpage {
+    width: 100%;
     margin: 0px;
     padding: 0px;
   }
 
   /*-------------------header-------------------------------------------*/
 
+  header {
+    width: 100%;
+    height: 90px;
+  }
+
   .logo {
     width: 55%;
+    height: 50px;
+    font-size: 50px;
     margin-right: 50px;
   }
 
   /*--------------------------block_restaurant---------------------------------------*/
 
   .block_restaurant {
-    height: 300px;
+    width: 100%;
   }
 
   .block_restaurant img {
@@ -35,10 +43,33 @@
     width: 100%;
   }
 
-  h1 {
-    font-size: 30px;
+  .menu {
+    height: 1100px;
+    width: 100%;
   }
 
+  h1 {
+    font-size: 40px;
+  }
+
+  /*------------------------icone_coeur------------------------------------------*/
+  .icon_heart {
+    font-size: 50px;
+  }
+
+  .icon_heart_start {
+    font-size: 50px;
+  }
+
+  .icon_heart_3 {
+    font-size: 50px;
+  }
+
+  i.fas.fa-heart {
+    font-size: 50px;
+  }
+
+  /*---------------------------------------plats----------------------------------------*/
   .plates {
     width: 45%;
   }
@@ -56,20 +87,18 @@
     flex-wrap: wrap;
   }
 
-  .base {
-    font-size: 12px;
+  /*------------------------bouton----------------------------------------------*/
+  .button1 {
+    width: 300px;
+    height: 100px;
+    margin-top: 90px;
+    border-radius: 50px;
+    font-size: 20px;
   }
 
-  .details {
-    font-size: 12px;
-  }
-
-  .price {
-    font-size: 12px;
-  }
-
+  /*------------------footer-------------------------------------------------------*/
   footer {
-    height: 260px;
-    padding-top: unset;
+    padding-top: 25px;
+    height: 350px;
   }
 }

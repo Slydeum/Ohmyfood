@@ -39,6 +39,7 @@ header {
 /*---------------------------restaurant---------------------------------------------*/
 .block_restaurant {
   height: 1340px;
+  width: 100%;
 }
 
 .block_restaurant img {
@@ -59,7 +60,6 @@ header {
 
 .title {
   padding-top: 20px;
-  position: relative;
 }
 
 h1 {
@@ -70,7 +70,7 @@ h1 {
   justify-content: flex-start;
 }
 
-/*-----------------------icon_heart------------------------------------*/
+/*--------------------------------------------icon_heart------------------------------------*/
 
 .icon_heart:hover i.fa-heart {
   display: none;
@@ -101,11 +101,11 @@ h1 {
 .icon_heart_start {
   display: flex;
   justify-content: flex-end;
-  font-size: 2rem;
-  margin-top: -2rem;
+  font-size: 30px;
+  margin-top: -30px;
 }
 
-/*-- icon_heart 3 --*/
+/*----------- icon_heart 3 -----------------*/
 
 .icon_heart_3:hover i.fa-heart {
   display: none;
@@ -118,8 +118,8 @@ h1 {
 .icon_heart_3 {
   display: flex;
   justify-content: flex-end;
-  font-size: 2rem;
-  margin: 1.2rem 0 2rem 9rem;
+  font-size: 30px;
+  margin: 12px 0 30px 10px;
 }
 
 i.fa-heart:hover {
@@ -184,14 +184,29 @@ i.fas.fa-heart {
 
 .base {
   font-weight: bold;
+  font-size: 16px;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .details {
+  font-size: 13px;
   margin-top: 7px;
-  text-overflow: ellipsis;
+  width: 250px;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
+
+/*.over_text {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}*/
 
 .price {
   position: absolute;
@@ -199,6 +214,7 @@ i.fas.fa-heart {
   top: 35px;
   font-weight: bold;
 }
+
 /*------------------------apparition-des-plats------------------------------------*/
 .starter {
   animation: fadein 5s;
@@ -214,7 +230,7 @@ i.fas.fa-heart {
 
 @keyframes fadein {
   from {
-    opacity: 0;
+    opacity: 0.1;
   }
   to {
     opacity: 1;
