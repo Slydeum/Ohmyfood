@@ -1,0 +1,60 @@
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  /*html,
+  body {
+    overflow-x: hidden;
+  }*/
+
+  body {
+    width: auto;
+    margin: unset;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+
+  .block_page {
+    width: 170%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*--------------------------------header------------------------------------------------------------------*/
+
+  header {
+    width: 150%;
+  }
+
+  .explore {
+    width: 150%;
+    justify-content: center;
+  }
+
+  .button2 {
+    width: 130%;
+  }
+
+  .button_function {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .function {
+    height: 200px;
+  }
+
+  .restaurants_choice {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .restaurants {
+    height: 450px;
+  }
+
+  figure .new {
+    width: 100px;
+  }
+
+  footer {
+    width: 150%;
+  }
+}

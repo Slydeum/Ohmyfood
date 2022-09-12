@@ -28,8 +28,11 @@
   .logo {
     width: 55%;
     height: 50px;
-    font-size: 50px;
     margin-right: 50px;
+  }
+
+  header i {
+    padding-bottom: 15px;
   }
 
   /*--------------------------block_restaurant---------------------------------------*/
@@ -44,7 +47,7 @@
   }
 
   .menu {
-    height: 1100px;
+    height: 1110px;
     width: 100%;
   }
 
@@ -100,5 +103,6 @@
   footer {
     padding-top: 25px;
     height: 350px;
+    margin: unset;
   }
 }

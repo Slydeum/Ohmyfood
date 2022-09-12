@@ -9,7 +9,6 @@
 body {
   font-family: "Roboto", sans-serif;
   max-width: 768px;
-  margin: auto;
 }
 
 .block-page {
@@ -62,18 +61,18 @@ body {
 header {
   width: 100%;
   height: 115px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column;*/
 }
 
 .logo {
   display: flex;
-  height: 65px;
   justify-content: center;
+  height: 65px;
 }
 
 .logo img {
-  width: 40%;
+  width: 50%;
 }
 
 .location {
@@ -201,16 +200,14 @@ h2 {
 
 .button2 i {
   margin-right: 35px;
+  color: grey;
 }
 
-.button i:hover {
+.button2:hover {
   background-color: #f0dfeb;
   box-shadow: 5px 4px 4px grey;
 }
 
-.button_function i {
-  color: grey;
-}
 /*--------------------------------restaurants--------------------------------------------------*/
 
 .restaurants {
@@ -374,10 +371,16 @@ footer i {
   margin-right: 15px;
 }
 
+.propose {
+  display: flex;
+  flex-direction: row;
+}
+
 .fa-handshake {
-  transform: rotate(135deg);
-  font-size: 14px;
+  transform: rotate(-35deg);
   margin-right: 10px;
+  padding-top: 5px;
+  border: none;
 }
 
 .footer_link {
@@ -385,5 +388,10 @@ footer i {
 }
 
 .footer_link :hover {
-  color: #9356dc;
+  transition: 1.5s;
+  border-bottom: 4px solid #9356dc;
 }
+
+/*footer i :hover {
+  border-bottom: none;
+}*/
