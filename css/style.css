@@ -16,7 +16,31 @@ body {
 }
 /*------------------------------------------loader----------------------------------------------------*/
 
-/*.loader {
+/*.loading_page {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  height: 100vh;
+  z-index: 1000;
+  animation: normal 5sec;
+  animation-fill-mode: forwards;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+}
+
+.loading_page {
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.loader {
   width: 150px;
   height: 150px;
   display: grid;
@@ -61,8 +85,6 @@ body {
 header {
   width: 100%;
   height: 115px;
-  /* display: flex;
-  flex-direction: column;*/
 }
 
 .logo {
@@ -203,7 +225,7 @@ h2 {
   color: grey;
 }
 
-.button2:hover {
+.w:hover {
   background-color: #f0dfeb;
   box-shadow: 5px 4px 4px grey;
 }
