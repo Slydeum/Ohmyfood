@@ -1,60 +1,54 @@
 @media screen and (min-width: 992px) and (max-width: 1440px) {
-  /*html,
+  html,
   body {
     overflow-x: hidden;
-  }*/
+  }
 
   body {
-    width: auto;
-    margin: unset;
+    max-width: 1380px;
+    margin: auto;
     box-sizing: border-box;
     font-size: 18px;
   }
 
   .block_page {
-    width: 170%;
     margin: 0px;
     padding: 0px;
   }
 
-  /*--------------------------------header------------------------------------------------------------------*/
-
-  header {
-    width: 150%;
+  /*----------------------------bouton------------------------------------------------*/
+  .button1 {
+    width: 50%;
   }
 
-  .explore {
-    width: 150%;
-    justify-content: center;
-  }
-
-  .button2 {
-    width: 130%;
-  }
-
-  .button_function {
+  /*-------------------------fonctionnement-----------------------------------------*/
+  .function {
     display: flex;
     flex-direction: row;
+    height: 120px;
   }
 
-  .function {
-    height: 200px;
+  .function_content {
+    width: 30%;
   }
 
+  /*----------------------------restaurants-------------------------------------*/
   .restaurants_choice {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .restaurants {
-    height: 450px;
+    height: 680px;
+  }
+
+  figure {
+    width: 45%;
+    margin-left: 40px;
   }
 
   figure .new {
     width: 100px;
-  }
-
-  footer {
-    width: 150%;
   }
 }

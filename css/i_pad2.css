@@ -6,8 +6,7 @@
 
   body {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
     box-sizing: border-box;
     font-size: 18px;
   }
@@ -25,21 +24,16 @@
     height: 90px;
   }
 
-  .logo {
-    width: 55%;
-    height: 50px;
-    margin-right: 50px;
+  header i {
+    font-size: 40px;
   }
 
-  header i {
-    padding-bottom: 15px;
+  #logo {
+    font-size: 60px;
+    margin-right: 200px;
   }
 
   /*--------------------------block_restaurant---------------------------------------*/
-
-  .block_restaurant {
-    width: 100%;
-  }
 
   .block_restaurant img {
     height: 300px;
@@ -48,7 +42,6 @@
 
   .menu {
     height: 1110px;
-    width: 100%;
   }
 
   h1 {
@@ -73,30 +66,45 @@
   }
 
   /*---------------------------------------plats----------------------------------------*/
-  .plates {
-    width: 45%;
-  }
-
-  .starter {
-    width: 45%;
-  }
-
-  .dessert {
-    width: 45%;
-  }
-
   .choice {
     display: flex;
     flex-wrap: wrap;
   }
 
+  .starter {
+    width: 45%;
+    height: 80px;
+  }
+
+  .plates {
+    width: 45%;
+    height: 80px;
+  }
+
+  .dessert {
+    width: 45%;
+    height: 80px;
+  }
+
+  .base {
+    font-size: 20px;
+  }
+
+  .details {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
   /*------------------------bouton----------------------------------------------*/
   .button1 {
-    width: 300px;
+    width: 350px;
     height: 100px;
     margin-top: 90px;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   /*------------------footer-------------------------------------------------------*/
@@ -104,5 +112,13 @@
     padding-top: 25px;
     height: 350px;
     margin: unset;
+  }
+
+  .footer_title {
+    font-size: 30px;
+  }
+
+  .footer_link {
+    font-size: 20px;
   }
 }

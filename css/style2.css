@@ -23,16 +23,17 @@ header {
 
 .left_arrow {
   font-size: 25px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .left_arrow a {
   color: black;
 }
 
-.logo {
-  width: 40%;
-  margin-right: 130px;
+#logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px;
+  margin-right: 60px;
 }
 
 /*---------------------------restaurant---------------------------------------------*/
@@ -157,7 +158,6 @@ i.fas.fa-heart {
   margin: 20px 0 0 20px;
   background-color: white;
   border-radius: 20px;
-  position: relative;
   padding: 10px 0 0 20px;
 }
 
@@ -167,7 +167,6 @@ i.fas.fa-heart {
   margin: 20px 0 0 20px;
   background-color: white;
   border-radius: 20px;
-  position: relative;
   padding: 10px 0 0 20px;
 }
 
@@ -177,7 +176,6 @@ i.fas.fa-heart {
   margin: 20px 0 0 20px;
   background-color: white;
   border-radius: 20px;
-  position: relative;
   padding: 10px 0 0 20px;
 }
 
@@ -203,10 +201,18 @@ i.fas.fa-heart {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  bottom: 17px;
+  bottom: 20px;
   right: 20px;
   font-weight: bold;
 }
+
+/*.menu_validation:hover {
+  transition: margin-right 50px 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  transition-property: margin-right;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  transition-delay: 0s;
+}*/
 
 /*------------------------apparition-des-plats------------------------------------*/
 .starter {
@@ -214,11 +220,11 @@ i.fas.fa-heart {
 }
 
 .plates {
-  animation: fadein 10s;
+  animation: fadein 15s;
 }
 
 .dessert {
-  animation: fadein 15s;
+  animation: fadein 25s;
 }
 
 @keyframes fadein {
@@ -235,7 +241,7 @@ i.fas.fa-heart {
 .button1 {
   width: 215px;
   height: 50px;
-  margin-top: 60px;
+  margin-top: 80px;
   border-radius: 25px;
   border: none;
   font-size: 16px;
@@ -303,6 +309,6 @@ footer i {
   border-bottom: 4px solid #9356dc;
 }
 
-/*footer i :hover {
+.footer_link i:hover {
   border-bottom: none;
-}*/
+}

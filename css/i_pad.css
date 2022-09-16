@@ -5,21 +5,65 @@
   }
 
   body {
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 18px;
+    width: auto;
+    margin: auto;
   }
 
   /*------------------------------------------header-----------------------------------------*/
-  header {
-    width: 100%;
+  .logo {
+    height: 100px;
   }
+
+  .location {
+    height: 100px;
+  }
+
+  form {
+    height: 40px;
+  }
+
+  .post {
+    font-size: 50px;
+  }
+
+  .search {
+    font-size: 20px;
+  }
+
+  #map {
+    font-size: 20px;
+    padding-top: 8px;
+  }
+
   /*------------------------titre_et_sous_titre----------------------------------------------*/
+  h2 {
+    font-size: 25px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .subtitle2 {
+    font-size: 20px;
+  }
+
+  .explore {
+    margin-top: 50px;
+    height: 310px;
+  }
+  /*----------bouton---------------*/
+  .button1 {
+    width: 50%;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 50px;
+  }
 
   /*----------------------------------fonctionnement----------------------------------------*/
 
-  .button2 {
-    width: 45%;
+  .function_title {
+    font-size: 25px;
   }
 
   .button_function {
@@ -32,7 +76,16 @@
     height: 300px;
   }
 
+  .function_content {
+    font-size: 20px;
+  }
+
   /*---------------------------------restaurants-----------------------------------------------*/
+  #restaurants_title {
+    font-size: 25px;
+    padding: 30px 0 20px 20px;
+  }
+
   figure {
     width: 47%;
   }
@@ -44,7 +97,19 @@
   }
 
   .restaurants {
-    width: 100%;
     height: 750px;
+  }
+
+  .name_and_place {
+    font-size: 20px;
+  }
+
+  /*--------------------------------footer-----------------------------------------*/
+  .footer_title {
+    font-size: 25px;
+  }
+
+  .footer_link {
+    font-size: 20px;
   }
 }
