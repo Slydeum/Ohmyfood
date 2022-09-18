@@ -206,13 +206,79 @@ i.fas.fa-heart {
   font-weight: bold;
 }
 
-/*.menu_validation:hover {
-  transition: margin-right 50px 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-  transition-property: margin-right;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.3, 0.7, 0.4, 1.5);
-  transition-delay: 0s;
-}*/
+.over_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*-------------------------validation_plats----------------------------------------*/
+.check {
+  background-color: #99e2d0;
+  width: 0%;
+  height: 30px;
+  margin: 0px 0px 50px 0px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  position: relative;
+  left: 320px;
+  bottom: 60px;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.check i {
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 100%;
+  padding: 2px 3px 2px 3px;
+}
+
+.choice:hover .price {
+  animation: translate_prices 1s forwards;
+}
+
+@keyframes translate_price {
+  0% {
+    right: 0%;
+  }
+  100% {
+    left: 24%;
+  }
+}
+
+.choice:hover .check {
+  animation: translate_check 1s forwards;
+  visibility: visible;
+}
+
+@keyframes translate_check {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 18%;
+  }
+}
+
+.choice:hover .check i {
+  animation: check_rotate 1s forwards;
+}
+
+@keyframes check_rotate {
+  0% {
+    transform: rotate(0deg);
+    font-size: 0px;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    font-size: 15px;
+  }
+}
+*/
 
 /*------------------------apparition-des-plats------------------------------------*/
 .starter {

@@ -208,11 +208,11 @@ h2 {
 }
 
 .function_icon {
-  padding-right: 35px;
+  margin-right: 35px;
   color: grey;
 }
 
-.function_content:hover {
+.function_content .function_icon:hover {
   background-color: #f0dfeb;
   box-shadow: 5px 4px 4px grey;
 }
