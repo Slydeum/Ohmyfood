@@ -1,24 +1,13 @@
-@media screen and (min-width: 992px) and (max-width: 1440px) {
-  html,
+@media screen and (min-width: 992px) and (max-width: 1600px) {
   body {
-    overflow-x: hidden;
-  }
-
-  body {
-    max-width: 1380px;
-    margin: auto;
-    box-sizing: border-box;
+    max-width: 100%;
     font-size: 18px;
-  }
-
-  .block_page {
-    margin: 0px;
-    padding: 0px;
   }
 
   form {
     margin-right: 20px;
   }
+
   /*----------------------------bouton------------------------------------------------*/
   .button1 {
     width: 50%;
@@ -33,6 +22,7 @@
 
   .function_content {
     width: 30%;
+    margin-left: 30px;
   }
 
   /*----------------------------restaurants-------------------------------------*/
@@ -53,5 +43,10 @@
 
   figure .new {
     width: 100px;
+  }
+
+  /*-------------------------footer---------------------------------------*/
+  .footer_title {
+    padding-top: none;
   }
 }

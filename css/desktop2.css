@@ -1,26 +1,16 @@
-@media screen and (min-width: 992px) and (max-width: 1440px) {
-  /*html,
+@media screen and (min-width: 992px) and (max-width: 1600px) {
   body {
-    overflow-x: hidden;
-  }*/
-
-  body {
-    /*width: auto;
-    margin: unset;
-    box-sizing: border-box;*/
+    max-width: 100%;
     font-size: 18px;
   }
 
-  .block_page {
-    margin: 0px;
-    padding: 0px;
-  }
-
   /*-------------------------------header----------------------------------------------------------*/
+  #logo {
+    font-size: 60px;
+  }
 
   /*-------------------------restaurants-------------------------------------------------*/
   .block_restaurant {
-    width: 156%;
     height: 900px;
   }
 
@@ -32,6 +22,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    flex-wrap: nowrap;
   }
 
   .menu {
@@ -46,7 +37,6 @@
   /*--------------------------------footer---------------------------------------------------------------*/
 
   footer {
-    width: 156%;
-    padding-top: 50px;
+    height: 370px;
   }
 }

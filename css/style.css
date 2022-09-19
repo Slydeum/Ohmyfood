@@ -265,12 +265,12 @@ figure img {
 
 .name {
   font-weight: bold;
-  padding: 15px 0 0 5px;
+  padding: 15px 0 0 15px;
   border: none;
 }
 
 .place {
-  padding: 5px 0 0 5px;
+  padding: 5px 0 0 15px;
   font-weight: normal;
 }
 
@@ -401,7 +401,7 @@ footer i {
 }
 
 .footer_link :hover {
-  transition: 1.5s;
+  transition: 1s;
   border-bottom: 4px solid #9356dc;
 }
 
