@@ -60,27 +60,9 @@
     flex-wrap: wrap;
   }
 
-  .starter {
+  .menu_content {
     width: 45%;
     height: 80px;
-  }
-
-  .plates {
-    width: 45%;
-    height: 80px;
-  }
-
-  .dessert {
-    width: 45%;
-    height: 80px;
-  }
-
-  .base {
-    font-size: 20px;
-  }
-
-  .details {
-    font-size: 18px;
   }
 
   .price {

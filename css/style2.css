@@ -154,49 +154,13 @@ i.fas.fa-heart {
 }
 
 /*-----------------------------------plats----------------------------------------------*/
-.starter {
+.menu_content {
   width: 90%;
   height: 60px;
   margin: 20px 0 0 20px;
   background-color: white;
   border-radius: 20px;
   padding: 10px 0 0 20px;
-}
-
-.plates {
-  width: 90%;
-  height: 60px;
-  margin: 20px 0 0 20px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px 0 0 20px;
-}
-
-.dessert {
-  width: 90%;
-  height: 60px;
-  margin: 20px 0 0 20px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px 0 0 20px;
-}
-
-.base {
-  font-weight: bold;
-  font-size: 16px;
-  width: 250px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.details {
-  font-size: 13px;
-  margin-top: 7px;
-  width: 250px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .price {
@@ -208,13 +172,13 @@ i.fas.fa-heart {
   font-weight: bold;
 }
 
-.over_text {
+.menu_text {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 /*-------------------------validation_plats----------------------------------------*/
-.check {
+.menu_animation {
   background-color: #99e2d0;
   width: 0%;
   height: 30px;
@@ -230,7 +194,7 @@ i.fas.fa-heart {
   justify-content: center;
 }
 
-.check i {
+.menu_animation i {
   color: #99e2d0;
   background-color: white;
   border-radius: 100%;
@@ -283,7 +247,7 @@ i.fas.fa-heart {
 */
 
 /*------------------------apparition-des-plats------------------------------------*/
-.starter {
+.choice {
   animation: fadein 5s;
 }
 
@@ -297,7 +261,7 @@ i.fas.fa-heart {
 
 @keyframes fadein {
   from {
-    opacity: 0.1;
+    opacity: 0;
   }
   to {
     opacity: 1;
