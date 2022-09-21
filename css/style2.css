@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -142,15 +147,8 @@ i.fas.fa-heart {
 .sub_menu {
   margin: 30px 0 0 20px;
   border-bottom-width: 50px;
-  border-bottom-color: #99e2d0;
-}
-
-.sub_menu::after {
-  content: "";
-  display: block;
-  width: 45px;
   border-bottom: 3px solid #99e2d0;
-  padding-bottom: 3px;
+  width: 45px;
 }
 
 /*-----------------------------------plats----------------------------------------------*/
@@ -173,6 +171,18 @@ i.fas.fa-heart {
 }
 
 .menu_text {
+  padding-bottom: 5px;
+  white-space: nowrap;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text2 {
+  font-size: 14px;
+  padding-top: 5px;
+  white-space: nowrap;
+  width: 250px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -180,9 +190,9 @@ i.fas.fa-heart {
 /*-------------------------validation_plats----------------------------------------*/
 .menu_animation {
   background-color: #99e2d0;
-  width: 0%;
+  width: 50px;
   height: 30px;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 0px 0px;
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
   position: relative;
@@ -194,27 +204,30 @@ i.fas.fa-heart {
   justify-content: center;
 }
 
-.menu_animation i {
+.check {
+  width: 25px;
   color: #99e2d0;
   background-color: white;
   border-radius: 100%;
   padding: 2px 3px 2px 3px;
+  position: absolute;
+  left: 50%;
 }
 
-.choice:hover .price {
-  animation: translate_prices 1s forwards;
+.menu_animation:hover {
+  animation: translate_prices 1s backwards;
 }
 
 @keyframes translate_price {
   0% {
-    right: 0%;
+    left: 0%;
   }
   100% {
-    left: 24%;
+    right: 24%;
   }
 }
 
-.choice:hover .check {
+.menu_content:hover .check {
   animation: translate_check 1s forwards;
   visibility: visible;
 }
@@ -229,7 +242,7 @@ i.fas.fa-heart {
   }
 }
 
-.choice:hover .check i {
+.menu_content:hover .check i {
   animation: check_rotate 1s forwards;
 }
 
@@ -244,19 +257,46 @@ i.fas.fa-heart {
     font-size: 15px;
   }
 }
-*/
 
 /*------------------------apparition-des-plats------------------------------------*/
-.choice {
-  animation: fadein 5s;
+.menu_details1 {
+  animation: fadein 3s;
 }
 
-.plates {
+.menu_details2 {
+  animation: fadein 6s;
+}
+
+.menu_details3 {
+  animation: fadein 9s;
+}
+
+.menu_details4 {
+  animation: fadein 12s;
+}
+
+.menu_details5 {
   animation: fadein 15s;
 }
 
-.dessert {
-  animation: fadein 25s;
+.menu_details6 {
+  animation: fadein 18s;
+}
+
+.menu_details7 {
+  animation: fadein 21s;
+}
+
+.menu_details8 {
+  animation: fadein 24s;
+}
+
+.menu_details9 {
+  animation: fadein 27s;
+}
+
+.menu_details10 {
+  animation: fadein 30s;
 }
 
 @keyframes fadein {

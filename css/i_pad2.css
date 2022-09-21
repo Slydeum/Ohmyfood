@@ -62,11 +62,15 @@
 
   .menu_content {
     width: 45%;
-    height: 80px;
+    height: 70px;
+  }
+
+  .text2 {
+    padding-top: 10px;
   }
 
   .price {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /*------------------------bouton----------------------------------------------*/
