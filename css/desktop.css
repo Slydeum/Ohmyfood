@@ -46,6 +46,14 @@
   }
 
   /*-------------------------footer---------------------------------------*/
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 25px;
+  }
+
   .footer_title {
     padding-top: none;
   }

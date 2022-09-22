@@ -136,7 +136,7 @@ i.fa-heart:hover {
 
 i.fas.fa-heart {
   display: none;
-  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -157,7 +157,7 @@ i.fas.fa-heart {
   height: 60px;
   margin: 20px 0 0 20px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 10px 0 0 20px;
 }
 
@@ -173,35 +173,85 @@ i.fas.fa-heart {
 .menu_text {
   padding-bottom: 5px;
   white-space: nowrap;
-  width: 250px;
+  width: 72%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .text2 {
   font-size: 14px;
-  padding-top: 5px;
   white-space: nowrap;
-  width: 250px;
+  width: 72%;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/*------------------------apparition-des-plats------------------------------------*/
+.menu_details1 {
+  animation: fadein 1s;
+}
+
+.menu_details2 {
+  animation: fadein 2s;
+}
+
+.menu_details3 {
+  animation: fadein 3s;
+}
+
+.menu_details4 {
+  animation: fadein 4s;
+}
+
+.menu_details5 {
+  animation: fadein 5s;
+}
+
+.menu_details6 {
+  animation: fadein 6s;
+}
+
+.menu_details7 {
+  animation: fadein 7s;
+}
+
+.menu_details8 {
+  animation: fadein 8s;
+}
+
+.menu_details9 {
+  animation: fadein 9s;
+}
+
+.menu_details10 {
+  animation: fadein 10s;
+}
+
+@keyframes fadein {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 
 /*-------------------------validation_plats----------------------------------------*/
 .menu_animation {
   background-color: #99e2d0;
-  width: 50px;
-  height: 30px;
-  margin: 0px 0px 0px 0px;
-  border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
+  width: 60px;
+  height: 62px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   position: relative;
-  left: 320px;
-  bottom: 60px;
+  left: 300px;
+  bottom: 69px;
   display: flex;
   visibility: hidden;
   align-items: center;
   justify-content: center;
+  transition: 3s;
+  animation-name: slide_left 3s;
 }
 
 .check {
@@ -210,35 +260,23 @@ i.fas.fa-heart {
   background-color: white;
   border-radius: 100%;
   padding: 2px 3px 2px 3px;
-  position: absolute;
-  left: 50%;
+  transition: 3s;
+  animation-name: slide_left 3s;
 }
 
 .menu_animation:hover {
-  animation: translate_prices 1s backwards;
-}
-
-@keyframes translate_price {
-  0% {
-    left: 0%;
-  }
-  100% {
-    right: 24%;
-  }
-}
-
-.menu_content:hover .check {
-  animation: translate_check 1s forwards;
+  animation: slide_left 3s;
   visibility: visible;
 }
 
-@keyframes translate_check {
+@keyframes slide_left {
   0% {
-    width: 0%;
+    transform: translateX(200px);
+    width: 0px;
   }
-
   100% {
-    width: 18%;
+    transform: translateX(0px);
+    width: 60px;
   }
 }
 
@@ -249,63 +287,17 @@ i.fas.fa-heart {
 @keyframes check_rotate {
   0% {
     transform: rotate(0deg);
-    font-size: 0px;
   }
 
   100% {
     transform: rotate(360deg);
-    font-size: 15px;
   }
 }
 
-/*------------------------apparition-des-plats------------------------------------*/
-.menu_details1 {
-  animation: fadein 3s;
-}
-
-.menu_details2 {
-  animation: fadein 6s;
-}
-
-.menu_details3 {
-  animation: fadein 9s;
-}
-
-.menu_details4 {
-  animation: fadein 12s;
-}
-
-.menu_details5 {
-  animation: fadein 15s;
-}
-
-.menu_details6 {
-  animation: fadein 18s;
-}
-
-.menu_details7 {
-  animation: fadein 21s;
-}
-
-.menu_details8 {
-  animation: fadein 24s;
-}
-
-.menu_details9 {
-  animation: fadein 27s;
-}
-
-.menu_details10 {
-  animation: fadein 30s;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.function_content:hover {
+  -webkit-animation: slidein 1s linear;
+  animation: slidein 1s linear;
+  margin-left: 76%;
 }
 
 /*------------------------------bouton_validation---------------------------------------------------*/
@@ -367,18 +359,19 @@ footer i {
 }
 
 .fa-cutlery {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .fa-handshake {
   transform: rotate(-35deg);
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 12px;
+  margin-right: 7px;
+  padding: 0 0 5px 3px;
 }
 
 .footer_link :hover {
-  transition: 1s;
-  border-bottom: 4px solid #9356dc;
+  transition: 0.3s;
+  border-bottom: 3px solid #9356dc;
 }
 
 .footer_link i:hover {

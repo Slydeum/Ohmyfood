@@ -16,15 +16,15 @@ body {
 }
 /*------------------------------------------loader----------------------------------------------------*/
 
-/*#loader_page {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.loading {
+  position: fixed;
+  z-index: 9999;
   background-color: white;
-  animation: opacity 0.1s forwards;
-  animation-duration: 0.5s;
-  animation-delay: 3.5s;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: wait;
 }
 
 .loader {
@@ -38,7 +38,6 @@ body {
   border-radius: 50%;
   border-color: #9356dc #0000;
   animation: s6 3s infinite linear;
-  -webkit-animation: s6 3s infinite linear;
 }
 
 .loader::before,
@@ -65,7 +64,7 @@ body {
   100% {
     transform: rotate(1turn);
   }
-}*/
+}
 
 /*----------------------------------header---------------------------------*/
 header {
@@ -164,10 +163,6 @@ h2 {
 
 /*-------------------------------Fonctionnement-----------------------------------------------*/
 
-/*.function {
-  height: 400px;
-}*/
-
 .function_title {
   margin: 50px 0 30px 20px;
   font-weight: bold;
@@ -200,7 +195,7 @@ h2 {
   background-color: #9356dc;
   border-radius: 100%;
   padding: 2px 7px 2px 7px;
-  margin-right: 20px;
+  margin: 0 20px 0 -10px;
 }
 
 .function_content a {
@@ -208,16 +203,16 @@ h2 {
 }
 
 .function_icon {
-  margin-right: 35px;
+  margin-right: 15px;
   color: grey;
 }
 
-.function_content .function_icon:hover {
-  background-color: #f0dfeb;
+.function_content:hover {
+  background-color: #f0cce5;
   box-shadow: 5px 4px 4px grey;
 }
 
-.function_content i:hover {
+.function_icon:hover {
   color: #8627fa;
 }
 
@@ -363,7 +358,7 @@ figure .new {
 
 footer {
   background-color: rgb(56, 55, 55);
-  height: 300px;
+  height: 220px;
 }
 
 .footer_title {
@@ -387,22 +382,23 @@ footer i {
 }
 
 .footer_link {
-  margin: 20px 0 0 20px;
+  margin: 10px 0 0 20px;
 }
 
 .fa-cutlery {
-  margin-right: 15px;
+  margin-right: 7px;
 }
 
 .fa-handshake {
   transform: rotate(-35deg);
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  padding: 0 0 5px 3px;
 }
 
 .footer_link :hover {
-  transition: 1s;
-  border-bottom: 4px solid #9356dc;
+  transition: 0.3s;
+  border-bottom: 3px solid #9356dc;
 }
 
 .footer_link i:hover {
