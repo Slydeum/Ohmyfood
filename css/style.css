@@ -16,12 +16,10 @@ body {
 }
 /*------------------------------------------loader----------------------------------------------------*/
 
-.loading {
+#loading {
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   background-color: white;
-  top: 0px;
-  left: 0px;
   height: 100%;
   width: 100%;
   cursor: wait;
@@ -29,7 +27,8 @@ body {
 
 .loader {
   position: absolute;
-  margin: 30px 0 0 20px;
+  top: 30%;
+  left: 29%;
   width: 150px;
   height: 150px;
   background-color: white;
@@ -37,14 +36,22 @@ body {
   border: 8px solid #0000;
   border-radius: 50%;
   border-color: #9356dc #0000;
-  animation: s6 3s infinite linear;
+  animation: s6 2s linear;
+}
+
+.loader_logo {
+  position: absolute;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px;
+  top: 60%;
+  left: 20%;
 }
 
 .loader::before,
 .loader::after {
   content: "";
   grid-area: 1/1;
-  margin: 4px;
+  margin: 5px;
   border: inherit;
   border-radius: 50%;
 }
@@ -61,8 +68,12 @@ body {
 }
 
 @keyframes s6 {
+  0% {
+    transform: rotate(2turn);
+  }
+
   100% {
-    transform: rotate(1turn);
+    transform: rotate(3turn);
   }
 }
 
