@@ -18,13 +18,22 @@ body {
 
 #loading {
   position: fixed;
-  z-index: 999;
+  z-index: 2;
   background-color: white;
   height: 100%;
   width: 100%;
   cursor: wait;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
+  animation: opacity 5s forwards;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 .loader_logo {

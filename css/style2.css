@@ -16,7 +16,7 @@ body {
   max-width: 768px;
 }
 
-/*------------------------header----------------------------------------------*/
+/*-----------------------------------------header----------------------------------------------*/
 
 header {
   height: 60px;
@@ -43,7 +43,7 @@ header {
   justify-content: center;
 }
 
-/*---------------------------restaurant---------------------------------------------*/
+/*--------------------------------------------restaurant---------------------------------------------*/
 .block_restaurant {
   height: 1340px;
   width: 100%;
@@ -77,7 +77,7 @@ h1 {
   justify-content: flex-start;
 }
 
-/*--------------------------------------------icon_heart------------------------------------*/
+/*--------------------------------------------icone_coeur------------------------------------*/
 
 .icon_heart:hover i.fa-heart {
   display: none;
@@ -151,7 +151,7 @@ i.fas.fa-heart {
   width: 45px;
 }
 
-/*-----------------------------------plats----------------------------------------------*/
+/*-----------------------------------plats---------------------------------------------------------------*/
 .menu_content {
   width: 90%;
   height: 60px;
@@ -159,21 +159,20 @@ i.fas.fa-heart {
   background-color: white;
   border-radius: 15px;
   padding: 10px 0 0 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .price {
+  font-weight: bold;
+  width: 200px;
   display: flex;
   justify-content: flex-end;
   position: relative;
   bottom: 20px;
-  right: 20px;
-  font-weight: bold;
+  left: 30px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  animation: opacity;
 }
 
 .menu_text {
@@ -190,7 +189,14 @@ i.fas.fa-heart {
   text-overflow: ellipsis;
 }
 
-/*------------------------apparition-des-plats------------------------------------*/
+.ellipsis {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*------------------------apparition-des-plats---------------------------------------------------------*/
 @keyframes fadein {
   from {
     scale: 0;
@@ -240,7 +246,7 @@ i.fas.fa-heart {
   animation: fadein 10s;
 }
 
-/*-------------------------validation_plats----------------------------------------*/
+/*-------------------------validation_plats-------------------------------------------------------------*/
 .menu_animation {
   background-color: #99e2d0;
   width: 60px;
@@ -279,6 +285,21 @@ i.fas.fa-heart {
   animation: slide_in 1s forwards;
 }
 
+/*-----------animation_décaler_le_prix--------------*/
+
+.ellipsis:hover .price {
+  animation: translate_price 0.4s forwards;
+}
+
+@keyframes translate_price {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 24%;
+  }
+}
+
 /*----------------------animation_rotate-------------*/
 
 @keyframes check_rotate {
@@ -295,6 +316,15 @@ i.fas.fa-heart {
   animation: check_rotate 1s forwards;
 }
 
+/*@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}*/
 /*------------------------------bouton_validation---------------------------------------------------*/
 
 .button1 {
@@ -321,7 +351,7 @@ i.fas.fa-heart {
   box-shadow: 5px 5px 5px grey;
 }
 
-/*----------------------------footer------------------------------------*/
+/*----------------------------footer--------------------------------------------------------------------*/
 
 footer {
   background-color: rgb(56, 55, 55);
