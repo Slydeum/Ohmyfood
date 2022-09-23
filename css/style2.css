@@ -159,6 +159,9 @@ i.fas.fa-heart {
   background-color: white;
   border-radius: 15px;
   padding: 10px 0 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price {
@@ -168,12 +171,14 @@ i.fas.fa-heart {
   bottom: 20px;
   right: 20px;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu_text {
   padding-bottom: 5px;
   white-space: nowrap;
-  width: 72%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -181,12 +186,20 @@ i.fas.fa-heart {
 .text2 {
   font-size: 14px;
   white-space: nowrap;
-  width: 72%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 /*------------------------apparition-des-plats------------------------------------*/
+@keyframes fadein {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
 .menu_details1 {
   animation: fadein 1s;
 }
@@ -227,15 +240,6 @@ i.fas.fa-heart {
   animation: fadein 10s;
 }
 
-@keyframes fadein {
-  from {
-    scale: 0;
-  }
-  to {
-    scale: 1;
-  }
-}
-
 /*-------------------------validation_plats----------------------------------------*/
 .menu_animation {
   background-color: #99e2d0;
@@ -244,14 +248,12 @@ i.fas.fa-heart {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: relative;
-  left: 300px;
+  left: 320px;
   bottom: 69px;
   display: flex;
   visibility: hidden;
   align-items: center;
   justify-content: center;
-  transition: 3s;
-  animation-name: slide_left 3s;
 }
 
 .check {
@@ -260,29 +262,24 @@ i.fas.fa-heart {
   background-color: white;
   border-radius: 100%;
   padding: 2px 3px 2px 3px;
-  transition: 3s;
-  animation-name: slide_left 3s;
 }
 
-.menu_animation:hover {
-  animation: slide_left 3s;
-  visibility: visible;
-}
-
-@keyframes slide_left {
+/*----------------------animation_slide------------*/
+@keyframes slide_in {
   0% {
-    transform: translateX(200px);
-    width: 0px;
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(0px);
-    width: 60px;
+    transform: translateX(-60px);
+    visibility: visible;
   }
 }
 
-.menu_content:hover .check i {
-  animation: check_rotate 1s forwards;
+.menu_content:hover .menu_animation {
+  animation: slide_in 1s forwards;
 }
+
+/*----------------------animation_rotate-------------*/
 
 @keyframes check_rotate {
   0% {
@@ -294,10 +291,8 @@ i.fas.fa-heart {
   }
 }
 
-.function_content:hover {
-  -webkit-animation: slidein 1s linear;
-  animation: slidein 1s linear;
-  margin-left: 76%;
+.menu_content:hover .check i {
+  animation: check_rotate 1s forwards;
 }
 
 /*------------------------------bouton_validation---------------------------------------------------*/

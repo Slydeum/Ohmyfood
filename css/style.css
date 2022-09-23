@@ -23,6 +23,16 @@ body {
   height: 100%;
   width: 100%;
   cursor: wait;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+.loader_logo {
+  position: absolute;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px;
+  top: 60%;
+  left: 20%;
 }
 
 .loader {
@@ -37,14 +47,6 @@ body {
   border-radius: 50%;
   border-color: #9356dc #0000;
   animation: s6 2s linear;
-}
-
-.loader_logo {
-  position: absolute;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 40px;
-  top: 60%;
-  left: 20%;
 }
 
 .loader::before,
@@ -65,6 +67,8 @@ body {
 
 .loader::after {
   margin: 16px;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
 }
 
 @keyframes s6 {
@@ -167,7 +171,6 @@ h2 {
 }
 
 .button1:hover {
-  background-color: #fab1e5;
   background: linear-gradient(to top left, #8627fa, #fa4cc6);
   box-shadow: 5px 5px 5px grey;
 }
@@ -408,7 +411,8 @@ footer i {
 }
 
 .footer_link :hover {
-  transition: 0.3s;
+  transition-duration: 0.5s;
+
   border-bottom: 3px solid #9356dc;
 }
 

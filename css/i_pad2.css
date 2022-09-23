@@ -73,6 +73,11 @@
     font-size: 18px;
   }
 
+  /*.menu_animation {
+    position: relative;
+    left: 400px;
+  }*/
+
   /*------------------------bouton----------------------------------------------*/
   .button1 {
     width: 250px;
@@ -85,7 +90,7 @@
   /*------------------footer-------------------------------------------------------*/
   footer {
     padding-top: 25px;
-    height: 350px;
+    height: 330px;
     margin: unset;
   }
 

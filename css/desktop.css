@@ -4,10 +4,6 @@
     font-size: 18px;
   }
 
-  form {
-    margin-right: 20px;
-  }
-
   /*-------------------------loader--------------------------------------------------*/
   .loader {
     position: absolute;
@@ -21,6 +17,10 @@
     position: absolute;
     top: 60%;
     left: 43%;
+  }
+  /*-------------------header---------------------------------------------*/
+  form {
+    margin-right: 20px;
   }
 
   /*----------------------------bouton------------------------------------------------*/
@@ -62,14 +62,14 @@
 
   /*-------------------------footer---------------------------------------*/
 
+  .footer_title {
+    font-size: 25px;
+  }
+
   .links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 25px;
-  }
-
-  .footer_title {
-    padding-top: none;
   }
 }
