@@ -161,22 +161,17 @@ i.fas.fa-heart {
   padding: 10px 0 0 20px;
 }
 
-.price {
-  font-weight: bold;
-  width: 200px;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 20px;
-  left: 30px;
+.text {
+  width: 250px;
+  position: absolute;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  animation: opacity;
 }
 
 .menu_text {
   padding-bottom: 5px;
+  width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -184,13 +179,25 @@ i.fas.fa-heart {
 
 .text2 {
   font-size: 14px;
+  width: 150px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.price {
+  width: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 40px;
+  padding: 20px 30px 0 0;
+  /*animation: opacity;*/
+}
+
 .ellipsis {
   width: 200px;
+  display: flex;
+  justify-content: space-between;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -199,10 +206,10 @@ i.fas.fa-heart {
 /*------------------------apparition-des-plats---------------------------------------------------------*/
 @keyframes fadein {
   from {
-    scale: 0;
+    opacity: 0;
   }
   to {
-    scale: 1;
+    opacity: 1;
   }
 }
 
@@ -211,23 +218,23 @@ i.fas.fa-heart {
 }
 
 .menu_details2 {
-  animation: fadein 2s;
-}
-
-.menu_details3 {
   animation: fadein 3s;
 }
 
-.menu_details4 {
-  animation: fadein 4s;
-}
-
-.menu_details5 {
+.menu_details3 {
   animation: fadein 5s;
 }
 
+.menu_details4 {
+  animation: fadein 7s;
+}
+
+.menu_details5 {
+  animation: fadein 9s;
+}
+
 .menu_details6 {
-  animation: fadein 6s;
+  animation: fadein 11s;
 }
 
 .menu_details7 {
@@ -255,7 +262,7 @@ i.fas.fa-heart {
   border-bottom-right-radius: 15px;
   position: relative;
   left: 320px;
-  bottom: 69px;
+  bottom: 11px;
   display: flex;
   visibility: hidden;
   align-items: center;
@@ -285,15 +292,29 @@ i.fas.fa-heart {
   animation: slide_in 1s forwards;
 }
 
+/*-----------animation_décaler_la_description----------------*/
+/*.ellipsis:hover .text {
+  animation: translate_text 1s forwards;
+}
+
+@keyframes translate_text {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}*/
+
 /*-----------animation_décaler_le_prix--------------*/
 
 .ellipsis:hover .price {
-  animation: translate_price 0.4s forwards;
+  animation: translate_price 1s forwards;
 }
 
 @keyframes translate_price {
   0% {
-    right: 2%;
+    right: 0%;
   }
   100% {
     right: 24%;
