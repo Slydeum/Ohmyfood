@@ -5,10 +5,14 @@
   }
 
   /*-------------------------loader--------------------------------------------------*/
+  #loading {
+    width: 100%;
+  }
+
   .loader {
     position: absolute;
     top: 32%;
-    left: 45%;
+    left: 43%;
     width: 150px;
     height: 150px;
   }
@@ -16,7 +20,7 @@
   .loader_logo {
     position: absolute;
     top: 60%;
-    left: 43%;
+    left: 40%;
   }
   /*-------------------header---------------------------------------------*/
   form {
@@ -36,11 +40,15 @@
   }
 
   .function_content {
-    width: 30%;
-    margin-left: 30px;
+    width: 100%;
+  }
+
+  .function_box {
+    margin-left: 80px;
   }
 
   /*----------------------------restaurants-------------------------------------*/
+
   .restaurants_choice {
     display: flex;
     flex-direction: row;

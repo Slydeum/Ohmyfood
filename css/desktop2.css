@@ -21,6 +21,10 @@
 
   .menu {
     height: 720px;
+    width: 90%;
+    margin-left: 75px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
   }
 
   .choice {
@@ -55,7 +59,7 @@
   .price {
     font-size: 20px;
     position: relative;
-    left: 200px;
+    left: 220px;
   }
 
   .menu_animation {
