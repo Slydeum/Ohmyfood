@@ -77,7 +77,7 @@ h1 {
   justify-content: flex-start;
 }
 
-/*--------------------------------------------icone_coeur------------------------------------*/
+/*---------------------icone_coeur----------------------------*/
 
 .icon_heart:hover i.fa-heart {
   display: none;
@@ -159,10 +159,11 @@ i.fas.fa-heart {
   background-color: white;
   border-radius: 15px;
   padding: 10px 0 0 20px;
+  position: relative;
 }
 
 .text {
-  max-width: 250px;
+  width: 250px;
   position: absolute;
   overflow: hidden;
   white-space: nowrap;
@@ -171,7 +172,7 @@ i.fas.fa-heart {
 
 .menu_text {
   padding-bottom: 5px;
-  max-width: 250px;
+  width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -179,7 +180,7 @@ i.fas.fa-heart {
 
 .text2 {
   font-size: 14px;
-  max-width: 250px;
+  width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -189,8 +190,8 @@ i.fas.fa-heart {
   width: 20px;
   font-weight: bold;
   position: absolute;
-  right: 10%;
-  padding: 20px 30px 0 0;
+  right: 5%;
+  padding: 30px 20px 0 0;
 }
 
 .ellipsis {
@@ -202,7 +203,7 @@ i.fas.fa-heart {
   text-overflow: ellipsis;
 }
 
-/*------------------------apparition-des-plats---------------------------------------------------------*/
+/*------------------------apparition-des-plats----------------------*/
 @keyframes fadein {
   from {
     opacity: 0;
@@ -217,39 +218,39 @@ i.fas.fa-heart {
 }
 
 .menu_details2 {
-  animation: fadein 2s;
+  animation: fadein 2.5s;
 }
 
 .menu_details3 {
-  animation: fadein 3s;
-}
-
-.menu_details4 {
   animation: fadein 4s;
 }
 
+.menu_details4 {
+  animation: fadein 5.5s;
+}
+
 .menu_details5 {
-  animation: fadein 5s;
-}
-
-.menu_details6 {
-  animation: fadein 6s;
-}
-
-.menu_details7 {
   animation: fadein 7s;
 }
 
+.menu_details6 {
+  animation: fadein 8.5s;
+}
+
+.menu_details7 {
+  animation: fadein 10s;
+}
+
 .menu_details8 {
-  animation: fadein 8s;
+  animation: fadein 11.5s;
 }
 
 .menu_details9 {
-  animation: fadein 9s;
+  animation: fadein 13s;
 }
 
 .menu_details10 {
-  animation: fadein 10s;
+  animation: fadein 14.5s;
 }
 
 /*-------------------------validation_plats-------------------------------------------------------------*/
@@ -259,9 +260,9 @@ i.fas.fa-heart {
   height: 62px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  position: relative;
-  left: 270px;
-  bottom: 11px;
+  position: absolute;
+  left: 378px;
+  bottom: 0px;
   display: flex;
   visibility: hidden;
   align-items: center;
@@ -276,20 +277,21 @@ i.fas.fa-heart {
   padding: 2px 3px 2px 3px;
 }
 
-/*----------------------animation_slide------------*/
-@keyframes slide_in {
-  0% {
-    transform: translateX(0%);
-    /*visibility: hidden;*/
-  }
-  100% {
-    transform: translateX(-40%);
-  }
-}
-
+/*-----------------animation--validation---des--plats------------*/
 .menu_content:hover .menu_animation {
   animation: slide_in 1s forwards;
   visibility: visible;
+}
+
+@keyframes slide_in {
+  0% {
+    transform: translateX(-55px);
+    width: 5%;
+  }
+  100% {
+    transform: translateX(-100px);
+    width: 18%;
+  }
 }
 
 /*-----------animation_décaler_le_prix--------------*/
@@ -306,6 +308,21 @@ i.fas.fa-heart {
     right: 24%;
   }
 }
+
+/*------------------------animation----décaler-----le texte-------------------------*/
+/*.ellipsis:hover .text {
+  animation: translate_text 1s backwards;
+}
+
+
+@keyframes translate_text {
+  0% {
+    right: 30%;
+  }
+  100% {
+    right: 54%;
+  }
+}*/
 
 /*----------------------animation_rotate-------------*/
 

@@ -21,7 +21,7 @@ body {
   z-index: 2;
   background-color: white;
   height: 100%;
-  width: 95%;
+  width: 100%;
   cursor: wait;
   animation: opacity 6s forwards;
 }
@@ -55,7 +55,7 @@ body {
   border: 8px solid #0000;
   border-radius: 50%;
   border-color: #9356dc #0000;
-  animation: s6 2s linear;
+  animation: loader 2s linear;
 }
 
 .loader::before,
@@ -80,7 +80,7 @@ body {
   animation-duration: 3s;
 }
 
-@keyframes s6 {
+@keyframes loader {
   0% {
     transform: rotate(2turn);
   }
@@ -234,12 +234,11 @@ h2 {
 
 .function_content:hover {
   background-color: #f0cce5;
-  box-shadow: 5px 4px 4px grey;
+  box-shadow: 8px 8px 8px grey;
 }
 
 .function_content:hover .function_icon {
   color: #8627fa;
-  box-shadow: 8px 8px 8px grey;
 }
 
 /*--------------------------------restaurants--------------------------------------------------*/
@@ -424,7 +423,6 @@ footer i {
 
 .footer_link :hover {
   transition-duration: 0.5s;
-
   border-bottom: 3px solid #9356dc;
 }
 

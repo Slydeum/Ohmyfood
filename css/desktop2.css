@@ -2,7 +2,6 @@
   body {
     max-width: 100%;
     font-size: 18px;
-    font-size: 16px;
   }
 
   /*-------------------------------header----------------------------------------------------------*/
@@ -10,9 +9,13 @@
     font-size: 60px;
   }
 
+  .left_arrow {
+    font-size: 45px;
+  }
+
   /*-------------------------restaurants-------------------------------------------------*/
   .block_restaurant {
-    height: 900px;
+    height: 1380px;
   }
 
   .block_restaurant img {
@@ -20,7 +23,6 @@
   }
 
   .menu {
-    height: 720px;
     width: 90%;
     margin-left: 75px;
     border-bottom-right-radius: 50px;
@@ -35,44 +37,66 @@
   }
 
   .menu_content {
-    width: 30%;
+    width: 35%;
     height: 80px;
+    margin-right: 80px;
   }
 
   .text {
     width: 350px;
-    position: absolute;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .menu_text {
     font-size: 20px;
+    width: 350px;
   }
 
   .text2 {
     font-size: 17px;
+    width: 350px;
     padding-top: 5px;
   }
 
   .price {
     font-size: 20px;
-    position: relative;
-    left: 220px;
+    margin-top: 10px;
   }
 
+  /*---------------------coeur--------------------------*/
+  .icon_heart {
+    font-size: 40px;
+    margin-right: 80px;
+  }
+
+  i.fas.fa-heart {
+    font-size: 40px;
+  }
+
+  /*------------validation---des----plats------------*/
   .menu_animation {
     height: 83px;
     width: 80px;
-    position: relative;
-    bottom: 55px;
-    left: 100%px;
+    position: absolute;
+    left: 467px;
   }
 
+  @keyframes slide_in {
+    0% {
+      transform: translateX(-30px);
+      width: 5%;
+    }
+    100% {
+      transform: translateX(-100px);
+      width: 18%;
+    }
+  }
+
+
+  /*---------bouton--commander-----------------*/
   .button1 {
     width: 35%;
-    font-size: 20px;
+    height: 80px;
+    font-size: 25px;
   }
 
   /*--------------------------------footer---------------------------------------------------------------*/
