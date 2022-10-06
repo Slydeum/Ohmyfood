@@ -195,7 +195,7 @@ i.fas.fa-heart {
 }
 
 .ellipsis {
-  width: 200px;
+  /*width: 200px;*/
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
@@ -257,7 +257,7 @@ i.fas.fa-heart {
 .menu_animation {
   background-color: #99e2d0;
   width: 60px;
-  height: 62px;
+  height: 60px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
@@ -296,7 +296,7 @@ i.fas.fa-heart {
 
 /*-----------animation_décaler_le_prix--------------*/
 
-.ellipsis:hover .price {
+.menu_content:hover .price {
   animation: translate_price 1s forwards;
 }
 
@@ -309,20 +309,20 @@ i.fas.fa-heart {
   }
 }
 
-/*------------------------animation----décaler-----le texte-------------------------*/
-/*.ellipsis:hover .text {
-  animation: translate_text 1s backwards;
+/*-----------animation----décaler-----le texte-------*/
+.menu_content:hover .text {
+  animation: translate_text 1s forwards;
 }
 
 
 @keyframes translate_text {
   0% {
-    right: 30%;
+    width: 100%;
   }
   100% {
-    right: 54%;
+    width: 55%;
   }
-}*/
+}
 
 /*----------------------animation_rotate-------------*/
 

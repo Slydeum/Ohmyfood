@@ -77,7 +77,7 @@
     height: 83px;
     width: 80px;
     position: absolute;
-    left: 467px;
+    left: 490px;
   }
 
   @keyframes slide_in {
@@ -97,6 +97,7 @@
     width: 35%;
     height: 80px;
     font-size: 25px;
+    border-radius: 50px;
   }
 
   /*--------------------------------footer---------------------------------------------------------------*/
