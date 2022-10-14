@@ -67,8 +67,6 @@
   }
 
   text {
-    width: 200px;
-    max-width: 350px;
     position: absolute;
     overflow: hidden;
     white-space: nowrap;

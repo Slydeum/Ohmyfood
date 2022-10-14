@@ -163,7 +163,7 @@ i.fas.fa-heart {
 }
 
 .text {
-  width: 250px;
+  /*width: 250px;*/
   position: absolute;
   overflow: hidden;
   white-space: nowrap;
@@ -172,7 +172,6 @@ i.fas.fa-heart {
 
 .menu_text {
   padding-bottom: 5px;
-  width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -180,7 +179,6 @@ i.fas.fa-heart {
 
 .text2 {
   font-size: 14px;
-  width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -195,7 +193,6 @@ i.fas.fa-heart {
 }
 
 .ellipsis {
-  /*width: 200px;*/
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
