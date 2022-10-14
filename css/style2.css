@@ -96,11 +96,12 @@ h1 {
   right: 30px;
 }
 
-/*---------- icon heart palette------------------*/
+/*---------- icone_coeur_palette------------------*/
 
 .icon_heart_start:hover i.fa-heart {
   display: none;
 }
+
 .icon_heart_start:hover i.fas.fa-heart {
   display: block;
 }
@@ -163,7 +164,6 @@ i.fas.fa-heart {
 }
 
 .text {
-  /*width: 250px;*/
   position: absolute;
   overflow: hidden;
   white-space: nowrap;
@@ -275,6 +275,7 @@ i.fas.fa-heart {
 }
 
 /*-----------------animation--validation---des--plats------------*/
+
 .menu_content:hover .menu_animation {
   animation: slide_in 1s forwards;
   visibility: visible;
@@ -307,6 +308,7 @@ i.fas.fa-heart {
 }
 
 /*-----------animation----décaler-----le texte-------*/
+
 .menu_content:hover .text {
   animation: translate_text 1s forwards;
 }
