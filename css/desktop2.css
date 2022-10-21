@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) and (max-width: 1600px) {
+@media screen and (min-width: 992px)  {
   body {
     max-width: 100%;
     font-size: 18px;
@@ -58,7 +58,7 @@
 
   @keyframes slide_in {
   0% {
-    transform: translateX(150px);
+    transform: translateX(200px);
     width: 5%;
   }
   100% {
@@ -82,15 +82,15 @@
 
   .menu_animation {
     height: 80px;
-    width: 80px;
-    /*position: absolute;*/
-    left: 103%;
+    width: 40px;
+    position: absolute;
+    left: 490px
   }
 
   @keyframes slide_in {
     0% {
-      transform: translateX(0px);
-      width: 0%;
+      transform: translateX(-20px);
+      width: 5%;
     }
     100% {
       transform: translateX(-100px);

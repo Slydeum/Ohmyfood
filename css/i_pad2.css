@@ -30,7 +30,8 @@
   }
 
   .menu {
-    height: 1110px;
+    margin-bottom: 350px;
+    height: 1200px;
   }
 
   h1 {
@@ -57,13 +58,13 @@
   /*---------------------------------------plats----------------------------------------*/
   .choice {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .menu_content {
-    width: 45%;
+    width: 350px;
     height: 70px;
-    position: relative;
   }
 
   text {
@@ -89,8 +90,18 @@
   .menu_animation {
     height: 70px;
     width: 70px;
-    position: absolute;
-    left: 384px;
+    left: 395px;
+  }
+
+  @keyframes slide_in {
+    0% {
+      transform: translateX(-60px);
+      width: 5%;
+    }
+    100% {
+      transform: translateX(-100px);
+      width: 18%;
+    }
   }
 
   /*------------------------bouton----------------------------------------------*/
@@ -104,13 +115,14 @@
 
   /*------------------footer-------------------------------------------------------*/
   footer {
-    padding-top: 25px;
-    height: 330px;
+    padding-top: 75px;
+    height: 400px;
     margin: unset;
   }
 
   .footer_title {
     font-size: 30px;
+    margin-top: 25px;
   }
 
   .footer_link {
