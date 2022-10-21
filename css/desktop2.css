@@ -121,4 +121,12 @@
   .footer_link {
     font-size: 20px;
   }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 25px;
+  }
+  
 }
