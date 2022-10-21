@@ -13,7 +13,8 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 768px;
+  max-width: 375px;
+  margin: auto;
 }
 
 /*-----------------------------------------header----------------------------------------------*/
@@ -44,6 +45,7 @@ header {
 }
 
 /*--------------------------------------------restaurant---------------------------------------------*/
+
 .block_restaurant {
   height: 1340px;
   width: 100%;
@@ -145,6 +147,7 @@ i.fas.fa-heart {
 }
 
 /*--------------------soulignement---vert-------------------------*/
+
 .sub_menu {
   margin: 30px 0 0 20px;
   border-bottom-width: 50px;
@@ -153,8 +156,9 @@ i.fas.fa-heart {
 }
 
 /*-----------------------------------plats---------------------------------------------------------------*/
+
 .menu_content {
-  width: 90%;
+  width: 340px;
   height: 60px;
   margin: 20px 0 0 20px;
   background-color: white;
@@ -210,47 +214,52 @@ i.fas.fa-heart {
   }
 }
 
-.menu_details1 {
+.choice1 {
   animation: fadein 1s;
 }
 
-.menu_details2 {
-  animation: fadein 2.5s;
+.choice2 {
+  animation: fadein 2s;
 }
 
-.menu_details3 {
+.choice3 {
+  animation: fadein 3s;
+}
+
+.choice4 {
   animation: fadein 4s;
 }
 
-.menu_details4 {
-  animation: fadein 5.5s;
+.choice5 {
+  animation: fadein 5s;
 }
 
-.menu_details5 {
+.choice6 {
+  animation: fadein 6s;
+}
+
+.choice7 {
   animation: fadein 7s;
 }
 
-.menu_details6 {
-  animation: fadein 8.5s;
+.choice8 {
+  animation: fadein 8s;
 }
 
-.menu_details7 {
+.choice9 {
+  animation: fadein 9s;
+}
+
+.choice10 {
   animation: fadein 10s;
 }
 
-.menu_details8 {
-  animation: fadein 11.5s;
-}
-
-.menu_details9 {
-  animation: fadein 13s;
-}
-
-.menu_details10 {
-  animation: fadein 14.5s;
+.choice11 {
+  animation: fadein 11s;
 }
 
 /*-------------------------validation_plats-------------------------------------------------------------*/
+
 .menu_animation {
   background-color: #99e2d0;
   width: 60px;
