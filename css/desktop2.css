@@ -82,14 +82,13 @@
 
   .menu_animation {
     height: 80px;
-    width: 40px;
     position: absolute;
-    left: 490px
+    left: 495px
   }
 
   @keyframes slide_in {
     0% {
-      transform: translateX(-20px);
+      transform: translateX(-40px);
       width: 5%;
     }
     100% {
